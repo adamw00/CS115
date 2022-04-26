@@ -1,0 +1,31 @@
+# I pledge my honor that I have abided by the Stevens Honor System.
+# Adam Woo
+
+# Start At Top
+0 x*** -> N 0
+0 NEx* -> W 0
+0 NxW* -> E 0
+0 NEWx -> S 1
+
+# Move Right
+1 *x** -> E 1
+1 *E** -> W 2
+
+# Finish Row + Move down
+2 **x* -> W 2
+2 **WS -> E 3
+2 **Wx -> S 1
+
+# Transition to Bottom Half
+3 ***x -> S 4
+
+# Move Right for Row
+4 *x** -> E 4
+4 *E** -> W 5
+
+# Move Left for Row + Move Right to Get to Next Row
+5 **x* -> W 5
+5 **W* -> E 3
+
+
+
